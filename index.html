@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="module" src="js/script.js" defer></script>
+    <!-- <script type="module" src="js/customEval.js" defer></script> -->
+    <script type="module" src="js/helper.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="display">
+            <input id="input" type="text", inputmode="text" pattern="[0-9\+\-\*\/\(\)\.\s]*" placeholder="Enter math expression" onblur="this.focus()" autofocus>
+        </div>
+        <div class="body">
+            <div class="function">
+                <div class="f-row">
+                    <button class="functions" id="square" value="^2">x<sup>2</sup></sup></button>
+                    <button class="functions" id="sqrt" value="&#8730;(">&#8730;</button>
+                    <button class="functions" id="answer" value="0">Ans</button>
+                </div>
+                <div class="f-row">
+                    <button class="functions" id="sin" value="sin(">sin(</button>
+                    <button class="functions" id="cos" value="cos(">cos(</button>
+                    <button class="functions" id="tan" value="tan(">tan(</button>
+                </div>
+                <div class="f-row">
+                    <button class="functions" id="open" value="(">(</button>
+                    <button class="functions" id="close" value=")">)</button>
+                    <button class="helper" id="larr" onclick="executeHelper('larr')">&larr;</button>
+                    <button class="helper" id="rarr" onclick="executeHelper('rarr')">&rarr;</button>
+                </div>
+            </div>
+            <div class="pad">
+                <div class="p-row">
+                    <button class="operator" id="modulus" value="%">%</button>
+                    <button class="helper" id="CE" onclick="executeHelper('CE')">CE</button>
+                    <button class="helper" id="AC" onclick="executeHelper('AC')">AC</button>
+                    <button class="helper" id="backspace" onclick="executeHelper('backspace')">&#x232B;</button>
+                </div>
+                <div class="p-row">
+                    <button class="numbers" value="7">7</button>
+                    <button class="numbers" value="8">8</button>
+                    <button class="numbers" value="9">9</button>
+                    <button class="operator" id="divide" value="÷">÷</button>
+                </div>
+                <div class="p-row">
+                    <button class="numbers" value="4">4</button>
+                    <button class="numbers" value="5">5</button>
+                    <button class="numbers" value="6">6</button>
+                    <button class="operator" id="multiply" value="×">×</button>
+                </div>
+                <div class="p-row">
+                    <button class="numbers" value="1">1</button>
+                    <button class="numbers" value="2">2</button>
+                    <button class="numbers" value="3">3</button>
+                    <button class="operator" id="sub" value="-">-</button>
+                </div>
+                <div class="p-row">
+                    <button class="numbers" value="0">0</button>
+                    <button class="numbers" value=".">.</button>
+                    <button class="operator" id="evaluate" value="=">=</button>
+                    <button class="operator" id="add" value="+">+</button>
+                </div>
+                <div class="p-row">
+                    <button class="helper" id="history" onclick="executeHelper('history')">History</button>
+                </div>
+                <!-- <div class="nav"></div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
