@@ -47,9 +47,8 @@ function recallHistory(step) {
     CE();
 
     insertInputFieldValue(expression);
-    console.log(expression, " ", inputField.value);
+
     if (lastAnswerElement) {
-        console.log("in last answer")
         insertLastAnswerValue(Number(result));
     }
     return;
