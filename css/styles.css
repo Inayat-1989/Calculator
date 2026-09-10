@@ -3,7 +3,7 @@
   padding: 0;
   border: none;
   outline: none;
-  color: white
+  color: white;
 }
 
 body {
@@ -47,7 +47,7 @@ input {
   direction: ltr;
   text-align: right;
   border-radius: 10px;
-  background-color: #8AFF8A;
+  background-color: #8aff8a;
   color: black;
 }
 
@@ -63,19 +63,6 @@ input::placeholder {
   flex-direction: column;
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid black;
-}
-
-.nav > .up-down {
-  display: flex;
-  flex-direction: column;
-}
-
 .function {
   border-bottom: 2px solid black;
 }
@@ -86,12 +73,6 @@ input::placeholder {
   flex-wrap: wrap;
   margin: 0 5px;
 }
-
-/* .f-row > button {
-  min-width: 10px;
-  max-width: 100px;
-  font-size: 20px;
-} */
 
 .p-row {
   display: flex;
@@ -126,6 +107,7 @@ button {
   color: black;
 }
 
-sub, sup {
+sub,
+sup {
   color: black;
 }
